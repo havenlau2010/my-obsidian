@@ -1,0 +1,35 @@
+http://www.cnblogs.com/xuanye/p/6720342.html
+
+http://www.cnblogs.com/MuYunyun/p/6702053.html
+
+http://www.cnblogs.com/catcher1994/p/6720212.html
+
+http://www.cnblogs.com/codelove/p/6724615.html
+
+http://www.cnblogs.com/wangjieguang/p/hyper-v-ubuntu.html
+
+http://www.cnblogs.com/nianming/p/6726199.html
+
+http://www.cnblogs.com/minij/p/6727161.html
+
+http://www.cnblogs.com/liaoweipeng/p/6729502.html
+
+http://www.cnblogs.com/linezero/p/jiebanetcore.html
+
+http://www.cnblogs.com/qcloud1001/p/6728142.html
+
+
+
+对于一个POST请求，最重要的两个请求头是Accept和Content-Type。
+Accept是指客户端希望接口响应的数据类型，例如：application/json; q=0.9,application/xml; q=0.8,*/*; q=0.1，其中q是可选的，没有Accept请求头的情况下，服务端接口默认优先响应application/json；
+
+Content-Type在接口里常见的有如下：
+1、application/x-www-form-urlencoded，对应的Body值是URL编码过的Key-Value对，比如：key1=a&key2=b
+2、multipart/form-data; boundary={boundary}，对应的body可以多个分隔的内容，内容可是简单文本或二进制文件内容
+3、application/json; charset=utf-8，对应的Body值是json文本，在不指明charset的情况下，服务端默认为utf-8编码
+4、application/xml; charset=utf-8，对应的Body值是xml文本
+5、application/x-{extension}，这个一般是自定义扩展的，比如body是protobuf二进制内容，扩展为application/x-protobuf
+
+对于上面的Content-Type，asp.net里可以使用[FromForm]来绑定1和2这种form的，使用[FromBody]来绑定3到5这种application的，所以如果客户端提交json文本，希望响应xml文本，在ajax的配置应该是{accepts: "application/xml", contentType: "application/json"}，asp.net服务端使用[FromBody]
+
+提到安全，客户端本身的内容都是可见的，可见的不只是浏览器上的URL地址，所以安全是指传输内容的加密和验证的安全性，应该使用https替换http。在https接口请求流程中，客户端可选择性是否要验证服务端的证书的合法性，如果服务端使用的证书是自颁发的，客户端也启用服务端证书验证的情况下，请求https请求时客户端会抛出异常；服务端一般不做客户端证书验证，除非是需要验证客户端也是自己人的情况（不给第三方客户端请求到公开的接口）

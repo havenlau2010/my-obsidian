@@ -1,0 +1,2 @@
+update cb_HtType set IsCostControl = 1,isYsft=0,IsGllx=0,IsZJPayControl = NULL 
+where buguid = (select top 1 buguid from mybusinessunit where buname = '湾区城市公司' and iscompany = 1)  AND HtTypeCode in ('GL.13','GL.14')

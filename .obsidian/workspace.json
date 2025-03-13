@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "103e00af2e08a834",
+    "type": "split",
+    "children": [
+      {
+        "id": "e20d376c254be4d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5831e7054108e76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c00f7b579a40336a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ad6ebc0bd7b59446",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "4525a7fc680b4c28",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 390.5
+  },
+  "right": {
+    "id": "da4b56602b8c8e2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f24c67d6212d1fa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e937af1386cc1c1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "6455de508e16efcb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "7f5cd1cbc21d86b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "5cbd22d4de96dd83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AI/AI学习/DotNet.AI/AI 概念.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "AI 概念 的大纲"
+            }
+          },
+          {
+            "id": "4ddd1856953420fe",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "0eafa3aa7ce3d3e7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "笔记复习序列"
+            }
+          },
+          {
+            "id": "b40fda3f989d6fcd",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "dbfolder:创建一个新数据库表": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:创建新看板": false,
+      "homepage:Open homepage": false,
+      "obsidian-projects:打开项目": false,
+      "obsidian-spaced-repetition:复习卡片": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
+    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
+    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
+    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
+    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
+    "Projects - Demo Project",
+    "OneNote",
+    "AI/AI学习/DotNet.AI/AI 概念.md",
+    "liuwz-obsidion.md",
+    "AI/AI学习/DotNet.AI/ML.NET.md",
+    "2025-03-13.md",
+    "开源软件/开源软件/快速搭建属于自己的 RuoYi AI 助手平台.md",
+    "2025-03-12.md",
+    "未命名.canvas",
+    "金字塔原理-总结.md",
+    "AI/AI学习/DotNet.AI",
+    "AI/AI学习",
+    "AI",
+    "AI/AI应用/提示词-全栈工程师.md",
+    "开源软件/常见系统.md",
+    "AI/AI应用/提示词-全栈工程师和设计工程师.md",
+    "AI/AI应用",
+    "项目管理/项目管理的语言艺术.md",
+    "软件开发/性能调优/3、性能调优方案制定模板.md",
+    "软件开发/性能调优/4、编程性能调优——字符串与集合.md",
+    "软件开发/性能调优/5、编程性能调优——网络IO与多线程.md",
+    "软件开发/性能调优/6、编程性能调优——让服务器变得更快的代码.md",
+    "软件开发/性能调优/2、性能分析.md",
+    "软件开发/性能调优/1、性能调优入门.md",
+    "项目管理/项目范围和项目需求分不清？几分钟带你看懂项目管理的核心逻辑.md",
+    "软件开发/性能调优",
+    "项目管理",
+    "开源软件/开源项目/DotNet/盘点2024年推荐的6个Web开源项目.md",
+    "元认知",
+    "开源软件/开源项目/DotNet",
+    "软件开发/架构设计案例/10亿级数据分库分表，如何丝滑扩容不丢一条数据.md",
+    "软件开发/架构设计案例/高并发系统设计的六字真言：分、缓、异、限、降、演.md"
+  ]
+}

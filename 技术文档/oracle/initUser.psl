@@ -1,0 +1,8 @@
+echo 'xxxx';
+
+cd 'C:\Program Files\PowerShell\7'
+ls
+
+"Any key to exit." ;
+[Console]::Readkey() |　Out-Null ;
+Exit ;

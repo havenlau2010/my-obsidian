@@ -1,0 +1,98 @@
+dim FuWuQi,DaQu,User,Password
+Call 登陆游戏
+Call 输入账号密码
+Call 选择频道
+Call 人物选择
+Sub 登录游戏()
+Do
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, FuWuQi, "f4e8a3-000000", 1, intx, inty)
+If intx > 0 Then
+Dm.moveto intx, inty
+Dm.leftclick
+Delay 20
+Dm.leftclick
+Delay 100
+Exit Do
+Else
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, DaQu, "f4e8a3-000000", 1, intx, inty)
+If intx > 0 Then
+鼠标移动并点击 intx, inty, 500
+End If
+End If
+Loop
+End Sub
+Sub 输入账号密码()
+Do
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, "完成", "ffffff-000000", 1, intx, inty)
+If intx > 0 Then
+鼠标移动并点击 intx + 332, inty - 100, 100
+For i = 0 To 20
+Dm.KeyPress 8
+Delay 20
+Next
+For i = 1 To Len(User)
+Dm.KeyPress Asc(Mid(User, i, 1))
+Delay 50
+Next
+Delay 500
+鼠标移动并点击 intx + 332, inty - 74, 500
+For i = 1 To Len(PassWord)
+Dm.KeyPresschar Mid(PassWord, i, 1)
+Delay 50
+Next
+Delay 500
+Dm.KeyPress 13
+Delay 2000
+Exit Do
+Else
+Delay 100
+End If
+Loop
+End Sub
+Sub 选择频道()
+Do
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, "结束游戏", "ddc593-000000", 1, 结束游戏x, 结束游戏y)
+If 结束游戏x > 0 Then
+频道 = Dm.Ocr(结束游戏x - 447, 结束游戏y - 341, 结束游戏x - 368, 结束游戏y - 323, "c8c3a9-000000", 1)
+频道 = Mid(频道, 3, 2)
+If Val(Text3) - CLng(频道) > 14 Then
+鼠标移动并点击 结束游戏x - 175, 结束游戏y - 66, 500
+ElseIf Val(Text3) - CLng(频道) < 0 Then
+鼠标移动并点击 结束游戏x - 231, 结束游戏y - 66, 500
+Else
+dm_ret = Dm.FindStr(结束游戏x - 486, 结束游戏y - 345, 结束游戏x + 76, 结束游戏y - 134, "ch" & Text3, "c8c3a9-000000", 1, intx, inty)
+If intx > 0 Then
+Dm.moveto intx, inty
+Dm.leftclick
+Delay 20
+Dm.leftclick
+Delay 2000
+Exit Do
+End If
+End If
+End If
+Loop
+End Sub
+Sub 人物选择()
+Do
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, "创建角色", "ddddb7-303030", 1, intx, inty)
+If intx > 0 Then Exit Do
+Delay 100
+Loop
+hnd = Dm.FindWindow("地下城与勇士", "地下城与勇士")
+dm_ret = Dm.BindWindow(hnd, "normal", "normal", "normal", 0)
+Dm.MoveWindow hnd, 0, 0
+dm_ret = Dm.findstrfast(0, 0, 2000, 2000, "创建角色", "ddddb7-303030", 1, intx, inty)
+If intx > 0 Then
+当前角色名字 = Dm.Ocr(30 + (5 + 116) * n, 256, 30 + (5 + 116) * n + 116, 256 + 15, "d1b994-000000", 1)
+Dm.moveto 30 + (5 + 116) * n + 60, 256
+Dm.LeftDoubleClick
+// 角色已经进入游戏
+End If
+End Sub
+Function 鼠标移动并点击(x, y, ys)
+Randomize
+Dm.moveto x, y
+Dm.leftclick
+Delay ys + Rnd * 100 \ 1
+End Function
